@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2021-12-7, 15:53:19
+    Author     : 钟镇斌
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+.head {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    line-height: 120px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 1px solid #D6B656;
+    background: -webkit-linear-gradient(top, #FFF2CC, rgb(255, 254, 253));
+}
+
+.head span {
+    font-size: 16px;
+}
+
+.head h5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 120px;
+    background: url(../images/logo.jpeg) no-repeat;
+    background-size: 180px 120px;
+}
+
+.left {
+    float: left;
+    width: 180px;
+    height: 817px;
+    border-right: 1px solid #D6B656;
+    background: -webkit-linear-gradient(left, #FFF2CC, rgb(255, 254, 253));
+}
+.back{
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    border:none;
+    outline: none;
+    background-color: #d5e8d4;
+}
+.right {
+    float: left;
+    height: 817px;
+    width: 1723px;
+    background-color: #fff;
+}
+.right table{
+    width: 70%;
+    margin: 40px auto;
+   border-collapse:collapse;
+}
+.right table thead tr th{
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #FFF2CC;
+} 
+.right table tbody tr td{
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+}

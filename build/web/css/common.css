@@ -1,0 +1,355 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : 2021-12-3, 19:54:58
+    Author     : 钟镇斌
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+li {
+    list-style: none;
+}
+
+.head {
+    position: relative;
+    height: 120px;
+    width: 1920px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 1px solid #D6B656;
+    background: -webkit-linear-gradient(top, #FFF2CC, rgb(255, 254, 253));
+}
+
+.head h5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 120px;
+    background: url(../images/logo.jpeg) no-repeat;
+    background-size: 180px 120px;
+}
+
+.box {
+    width: 1920px;
+}
+
+.left {
+    float: left;
+    width: 180px;
+    height: 817px;
+    background: -webkit-linear-gradient(left, #FFF2CC, rgb(255, 254, 253));
+}
+
+.right {
+    float: left;
+    height: 817px;
+    width: 1723px;
+    background-color: #fff;
+}
+
+.right .hd .function_list {
+    float: left;
+    width: 215px;
+    height: 787px;
+    border-left: 1px solid #82B366;
+    border-right: 1px solid #82B366;
+    background: -webkit-linear-gradient(left, #D5E8D4, rgb(254, 254, 254));
+}
+
+.right .hd .function_list ul li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #82B366;
+    background-color: #D5E8D4;
+}
+
+.right .hd .function_list ul li:nth-child(n+2):after {
+    position: absolute;
+    top: 7px;
+    left: 197px;
+    content: '';
+    display: block;
+    width: 33px;
+    height: 34px;
+    border-bottom: 1px solid #82B366;
+    border-right: 1px solid #82B366;
+    transform: rotate(-45deg);
+}
+
+.right .hd .function_list ul li:nth-child(1) {
+    height: 60px;
+    font-size: 18px;
+    color: #000;
+    background: -webkit-linear-gradient(left, #D5E8D4, rgb(254, 254, 254));
+}
+
+.right .hd .function_list ul li:nth-child(n+2) {
+    font-size: 16px;
+    color: #000;
+}
+
+.right .hd .main {
+    position: relative;
+    float: left;
+    width: 1508px;
+    height: 787px;
+}
+
+.right .hd .main .bar {
+    width: 1524px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #D6B656;
+    background: -webkit-linear-gradient(top, #FFF2CC, rgb(255, 254, 253));
+}
+
+/* .right .hd .main .bar span {
+    float: right;
+    margin-right: 8px;
+    font-size: 16px;
+    color: #000;
+} */
+
+.right .hd .main .bar .animate {
+    position: fixed;
+    right: 0px;
+    top: 105px;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    color: #000;
+}
+
+.right .hd .main .bar .tan {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 14px;
+    width: 338px;
+    height: 420px;
+    border: 1px solid #D6B656;
+    z-index: -1;
+    background-color: #FFF2CC;
+}
+
+.right .hd .main .blank {
+    position: absolute;
+    display: block;
+    width: 98.8%;
+    height: 737px;
+    margin: 0 0 20px 24px;
+    border-left: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+}
+
+.right .hd .main .function {
+    position: absolute;
+    display: none;
+    width: 98.8%;
+    height: 737px;
+    margin: 0 0 20px 24px;
+    border-left: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+}
+
+.right .hd .main .function .tab_list {
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #D6B656;
+}
+
+.right .hd .main .function .tab_list ul li {
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    padding: 0px 18px;
+    font-size: 14px;
+    border-right: 1px solid #D6B656;
+    color: #000;
+    background-color: #FFF2CC;
+}
+
+.right .hd .main .function .tab_list ul li:nth-child(1) {
+    border-left: 1px solid #D6B656;
+}
+
+.right .hd .main .function .content {
+    position: relative;
+    width: 98.8%;
+    height: 668px;
+    margin: 20px;
+    border: 1px dotted #ccc;
+}
+
+.right .hd .main .function .content .show {
+    width: 60px;
+    height: 30px;
+    margin: 20px 0 0 275px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    border: none;
+    background-color: #FFF2CC;
+}
+
+.right .hd .main .function .content .block1,
+.right .hd .main .function .content .block2,
+.right .hd .main .function .content .block3,
+.right .hd .main .function .content .block4,
+.right .hd .main .function .content .block5 {
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 345px;
+    width: 1132px;
+    height: 500px;
+}
+
+.right .hd .main .function .content .overf_block {
+    width: 1442px;
+    left: 20px!important;
+}
+
+.li_left {
+    float: left;
+    margin-right: 200px;
+}
+
+.li_ritht {
+    float: left;
+}
+
+.right .hd .main .function .content .overf_block .li_left {
+    width: 718px;
+    margin-right: 0px;
+}
+
+.right .hd .main .function .content ul li {
+    height: 45px;
+    width: 100%;
+}
+
+.right .hd .main .function .content ul li label {
+    display: inline-block;
+    height: 45px;
+    width: 130px;
+    text-align: right;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+
+.right .hd .main .function .content ul li input {
+    height: 30px;
+    width: 300px;
+    line-height: 30px;
+    margin: 0 15px;
+    font-size: 16px;
+    color: #666;
+    outline: none;
+    border: none;
+    border: 1px solid #666;
+}
+.right .hd .main .function .content ul li span {
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    height: 19px;
+}
+
+.right .hd .main .function .content input[type='reset'],
+.right .hd .main .function .content input[type='submit'] {
+    width: 45px;
+    height: 25px;
+    font-size: 14px;
+    color: #000;
+    border: none;
+    outline: none;
+    background-color: #d5e8d4;
+}
+
+.right .hd .main .function .content input[type='reset'] {
+    margin: 0px 60px 0 222px;
+}
+
+.right .hd .main .function .content h5 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 5px 0 18px 156px;
+}
+
+.ft {
+    height: 30px;
+    width: 1740px;
+    line-height: 28px;
+    border: 1px solid #D6B656;
+    border-right: none;
+    background: -webkit-linear-gradient(bottom, #FFF2CC, rgb(255, 254, 253));
+}
+
+.ft span {
+    font-size: 12px;
+    color: #000;
+}
+
+.ft .user {
+    float: left;
+    margin-left: 20px;
+}
+
+.ft .time {
+    float: right;
+    margin-right: 20px;
+}
+.success_icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    background-image: url(../images/success.png);
+    background-size: 12px 12px;
+}
+
+.error_icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/error.png);
+    background-size: 12px 12px;
+}
+
+/* 清除浮动 */
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}

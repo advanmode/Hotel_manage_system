@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2021-12-3, 19:55:25
+    Author     : 钟镇斌
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+.head {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    line-height: 120px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 1px solid #D6B656;
+    background: -webkit-linear-gradient(top, #FFF2CC, rgb(255, 254, 253));
+}
+
+.head span {
+    font-size: 16px;
+}
+
+.head h5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 120px;
+    background: url(../images/logo.jpeg) no-repeat;
+    background-size: 180px 120px;
+}
+
+.left {
+    float: left;
+    width: 180px;
+    height: 817px;
+    border-right: 1px solid #D6B656;
+    background: -webkit-linear-gradient(left, #FFF2CC, rgb(255, 254, 253));
+}
+
+.right {
+    float: left;
+    height: 817px;
+    width: 1723px;
+    background-color: #fff;
+}
+
+.right .box {
+    width: 500px;
+    height: 400px;
+    margin: 200px auto 0;
+    text-align: center;
+    background: -webkit-linear-gradient(top, #D5E8D4, rgb(254, 254, 254));
+}
+
+.right .box h5 {
+    padding-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.right .box .id,
+.right .box .password {
+    width: 300px;
+    height: 30px;
+    margin-top: 50px;
+    text-align: left;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.right .box span {
+    display: block;
+    height: 19px;
+    margin-left: 99px;
+    font-size: 14px;
+    color: #df3033;
+    text-align: left;
+}
+
+.right .box .reset,
+.right .box .login {
+    width: 55px;
+    height: 40px;
+    margin: 35px 20px;
+    outline: none;
+    border: none;
+    background-color: #D5E8D4;
+}
+
